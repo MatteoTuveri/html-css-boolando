@@ -8,7 +8,7 @@
 
 /*var-settings*/
 :root {
-    --debug: black;
+    --debug: none;
     --navigation-bg-color: rgb(255, 105, 0);
     --navigation-text-color: white;
     --discount-bg-color: rgb(255, 0, 0);
@@ -92,10 +92,13 @@ main{
 }
 main div>div.img-settings{
     position: relative;
+    margin: -20px 0;
+    display: block;
 }
 .card-settings {
     width: calc(100% / 3);
     padding: 30px 15px;
+    position: relative;
 }
 
 h4 {
@@ -114,9 +117,9 @@ p {
     text-decoration: line-through;
 }
 .card-info{
-    position: fixed;
+    position: relative;
     z-index:2;
-    bottom: 250px;
+    bottom: 80px;
 }
 .card-discount{
     color: var(--discount-text-color);
@@ -130,11 +133,18 @@ p {
     margin: 0 5px;
 }
 .heart{
-    position: fixed;
+    position: relative;
+    width: fit-content;
+    top: 60px;
+    left: calc(100% - 6%);
     z-index: 2;
     padding: 5px 10px;
     background-color: white;
     font-size: 1.5em;
-    align-self: flex-end;
-    margin: 10px auto;
 }
+main>div>:nth-child(5)>div:nth-child(1)>.card-info{ /*hide card-info in fifth image*/
+   visibility: collapse;
+}
+main>div>:nth-child(6)>div:nth-child(1)>.card-info{ /*fix margin for card-info in sixth image*/
+    margin: 0 -5px;
+ }
