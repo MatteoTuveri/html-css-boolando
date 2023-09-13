@@ -125,12 +125,12 @@ p {
     color: var(--discount-text-color);
     background-color: var(--discount-bg-color);
     padding: 5px 5px;
+    margin-right: 5px;
 }
 .card-sustainable{
     color: var(--sustainable-text-color);
     background-color: var(--sustainable-bg-color);
     padding: 5px 5px;
-    margin: 0 5px;
 }
 .heart{
     position: relative;
@@ -145,6 +145,3 @@ p {
 main>div>:nth-child(5)>div:nth-child(1)>.card-info{ /*hide card-info in fifth image*/
    visibility: collapse;
 }
-main>div>:nth-child(6)>div:nth-child(1)>.card-info{ /*fix margin for card-info in sixth image*/
-    margin: 0 -5px;
- }
