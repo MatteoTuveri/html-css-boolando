@@ -8,7 +8,7 @@
 
 /*var-settings*/
 :root {
-    --debug: none;
+    --debug: black;
     --navigation-bg-color: rgb(255, 105, 0);
     --navigation-text-color: white;
     --discount-bg-color: rgb(255, 0, 0);
@@ -83,7 +83,7 @@ header a {
 img {
     display: block;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 
 /*main-settings*/
@@ -103,6 +103,21 @@ main div>div.img-settings{
     padding: 30px 15px;
     position: relative;
 }
+.img {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+.hover-images{
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    z-index: 3;
+}
+.hover-images:hover{
+    display: none;
+}
 
 h4 {
     padding: 5px auto;
@@ -121,8 +136,9 @@ main p {
 }
 .card-info{
     position: relative;
-    z-index:2;
+    z-index:10;
     bottom: 80px;
+    width: fit-content;
 }
 .card-discount{
     color: var(--discount-text-color);
@@ -139,11 +155,14 @@ main p {
     position: relative;
     width: fit-content;
     top: 60px;
-    left: calc(100% - 6%);
-    z-index: 2;
+    left: calc(100% - 40px);
+    z-index: 10;
     padding: 5px 10px;
     background-color: white;
     font-size: 1.5em;
+}
+.heart:hover{
+    color: red;
 }
 main>div>:nth-child(5)>div:nth-child(1)>.card-info{ /*hide card-info in fifth image*/
    visibility: collapse;
