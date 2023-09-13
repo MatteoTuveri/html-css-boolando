@@ -1,24 +1,76 @@
+/*reset-settings*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*var-settings*/
 :root {
     --debug: black;
-    --navigation-bg-color:rgb(255, 105, 0);
-    --navigation-text-color:white;
-    --discount-bg-color:rgb(255, 0, 0);
-    --discount-text-color:white;
-    --sustainable-bg-color:rgb(0, 127, 0);
-    --sustainable-text-color:white;
-    --actual-price-text-color:rgb(255, 0, 0);
-    --full-price-text-color:black;
-    --footer-bg-color:rgb(26, 26, 26);
-    --footer-bg-text-color:white;
+    --navigation-bg-color: rgb(255, 105, 0);
+    --navigation-text-color: white;
+    --discount-bg-color: rgb(255, 0, 0);
+    --discount-text-color: white;
+    --sustainable-bg-color: rgb(0, 127, 0);
+    --sustainable-text-color: white;
+    --actual-price-text-color: rgb(255, 0, 0);
+    --full-price-text-color: black;
+    --footer-bg-color: rgb(26, 26, 26);
+    --footer-bg-text-color: white;
 
 }
+
 /*general-settings*/
 .debug {
     border: 1px solid var(--debug);
+}
+
+.container {
+    min-width: 1200px;
+    padding: 10px 10%;
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 0 10px;
+}
+
+/*header-settings*/
+header {
+    background-color: var(--navigation-bg-color);
+}
+
+header a {
+    font-size: 1.2em;
+    color: var(--navigation-text-color);
+    text-decoration: none;
+}
+
+.logo-size {
+    width: 10%;
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
 }
