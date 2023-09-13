@@ -1,5 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*var-settings*/
+:root {
+    --debug: black;
+    --navigation-bg-color:rgb(255, 105, 0);
+    --navigation-text-color:white;
+    --discount-bg-color:rgb(255, 0, 0);
+    --discount-text-color:white;
+    --sustainable-bg-color:rgb(0, 127, 0);
+    --sustainable-text-color:white;
+    --actual-price-text-color:rgb(255, 0, 0);
+    --full-price-text-color:black;
+    --footer-bg-color:rgb(26, 26, 26);
+    --footer-bg-text-color:white;
+
+}
+/*general-settings*/
+.debug {
+    border: 1px solid var(--debug);
 }
