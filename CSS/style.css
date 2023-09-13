@@ -17,10 +17,9 @@
     --sustainable-text-color: white;
     --actual-price-text-color: rgb(255, 0, 0);
     --footer-bg-color: rgb(26, 26, 26);
-    --footer-bg-text-color: white;
+    --footer-text-color: white;
 
 }
-
 /*general-settings*/
 .debug {
     border: 1px solid var(--debug);
@@ -31,6 +30,9 @@
     padding: 15px 10%;
     margin: 0 auto;
 
+}
+body{
+    position: absolute;
 }
 
 ul {
@@ -64,6 +66,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10000;
+    top:0;
 }
 
 header a {
@@ -85,10 +88,10 @@ img {
 
 /*main-settings*/
 main{
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 150px;
     order:1000;
+    padding-top: 10%;
 }
 main div>div.img-settings{
     position: relative;
@@ -105,7 +108,7 @@ h4 {
     padding: 5px auto;
 }
 
-p {
+main p {
     padding-right: 5px;
 
 }
@@ -144,4 +147,24 @@ p {
 }
 main>div>:nth-child(5)>div:nth-child(1)>.card-info{ /*hide card-info in fifth image*/
    visibility: collapse;
+}
+/*footer-settings*/
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 25px 0;
+}
+footer a {
+    color: var(--navigation-text-color);
+    text-decoration: none;
+}
+
+h2{
+    padding: 0 10px;
+}
+footer p{
+    padding: 0 10px;
+}
+footer li{
+    font-size: 1.5em;
 }
