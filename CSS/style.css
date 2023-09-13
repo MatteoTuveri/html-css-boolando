@@ -16,7 +16,6 @@
     --sustainable-bg-color: rgb(0, 127, 0);
     --sustainable-text-color: white;
     --actual-price-text-color: rgb(255, 0, 0);
-    --full-price-text-color: black;
     --footer-bg-color: rgb(26, 26, 26);
     --footer-bg-text-color: white;
 
@@ -42,30 +41,13 @@ li {
     padding: 0 10px;
 }
 
-/*header-settings*/
-header {
-    background-color: var(--navigation-bg-color);
-}
-
-header a {
-    font-size: 1.2em;
-    color: var(--navigation-text-color);
-    text-decoration: none;
-}
-
-.logo-size {
-    width: 10%;
-    display: block;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
 .d-flex-row {
     display: flex;
     flex-flow: row wrap;
+}
+.d-flex-column{
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .space-between {
@@ -76,12 +58,56 @@ img {
     align-items: center;
 }
 
+/*header-settings*/
+header {
+    background-color: var(--navigation-bg-color);
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+header a {
+    font-size: 1.2em;
+    color: var(--navigation-text-color);
+    text-decoration: none;
+}
+
+.logo-size {
+    width: 300px;
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
 /*main-settings*/
-.card-settings{
+main{
+    position: absolute;
+    order:1000;
+    padding-top: 150px;
+}
+main div>div.img-settings{
+    position: relative;
+}
+.card-settings {
     width: calc(100% / 3);
     padding: 30px 15px;
 }
-h4{
+
+h4 {
     padding: 5px auto;
+}
+
+p {
     padding-right: 5px;
+
+}
+.actual-price{
+    color: var(--actual-price-text-color);
+    font-weight: bold;
+}
+.full-price{
+    text-decoration: line-through;
 }
