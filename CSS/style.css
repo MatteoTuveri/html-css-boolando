@@ -8,7 +8,7 @@
 
 /*var-settings*/
 :root {
-    --debug: black;
+    --debug: none;
     --navigation-bg-color: rgb(255, 105, 0);
     --navigation-text-color: white;
     --discount-bg-color: rgb(255, 0, 0);
