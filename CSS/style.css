@@ -80,13 +80,15 @@ header a {
 img {
     display: block;
     width: 100%;
+    z-index: 1;
 }
 
 /*main-settings*/
 main{
     position: absolute;
+    width: 100%;
+    top: 150px;
     order:1000;
-    padding-top: 150px;
 }
 main div>div.img-settings{
     position: relative;
@@ -110,4 +112,29 @@ p {
 }
 .full-price{
     text-decoration: line-through;
+}
+.card-info{
+    position: fixed;
+    z-index:2;
+    bottom: 250px;
+}
+.card-discount{
+    color: var(--discount-text-color);
+    background-color: var(--discount-bg-color);
+    padding: 5px 5px;
+}
+.card-sustainable{
+    color: var(--sustainable-text-color);
+    background-color: var(--sustainable-bg-color);
+    padding: 5px 5px;
+    margin: 0 5px;
+}
+.heart{
+    position: fixed;
+    z-index: 2;
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 1.5em;
+    align-self: flex-end;
+    margin: 10px auto;
 }
